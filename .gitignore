@@ -1,0 +1,223 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test files
+test_*.txt
+*_test.txt
+test_output/
+test_results/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Logs
+*.log
+logs/
+
+# AWS credentials (just in case)
+.aws/
+credentials
+
+# Backup files
+*.bak
+*.backup 
+
+# Tmp files
+*.html
+*.json
+
+# ===== MCP Test Generated Files =====
+
+# Test result files (JSON)
+test/mcp_comparison_results_*.json
+test/token_analysis_*.json
+
+# Test report files (HTML)
+test/mcp_comparison_report_*.html
+
+# Test log files
+test/mcp_comparison_test.log
+test/*.log
+
+# Test visualization files
+test/token_analysis_plot_*.png
+test/*.png
+test/*.jpg
+test/*.jpeg
+test/*.gif
+
+# Test temporary files and directories
+test_file_*.txt
+sample_*.txt
+backup_*.txt
+temp_*.txt
+mcp_test_*.txt
+test_dir_*/
+temp_dir_*/
+mcp_test_dir_*/
+
+# Test permissions and temporary files
+test/permissions.txt
+
+# Any test-generated files with timestamps
+*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9].*
+
+# Test cache and temporary directories
+test/results/
+test/output/
+test/temp/
+
+# Data analysis temporary files
+*.pkl
+*.pickle
+*.csv.bak
+*.json.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

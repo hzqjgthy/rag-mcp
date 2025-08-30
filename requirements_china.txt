@@ -1,0 +1,85 @@
+# RAG-MCP 中国本地化版本依赖
+# 安装命令: pip install -r requirements_china.txt
+
+# ==================== 核心依赖 ====================
+# 环境变量管理
+python-dotenv>=1.0.0
+
+# 命令行界面
+click>=8.2.0
+
+# HTTP请求
+requests>=2.25.1
+
+# 异步支持
+asyncio-mqtt>=0.16.0
+aiofiles>=23.0.0
+
+# ==================== LLM相关 ====================
+# OpenAI兼容接口 (用于DeepSeek等)
+openai>=1.75.0
+
+# 其他LLM服务SDK
+# zhipuai>=2.0.0  # 智谱AI (可选)
+# dashscope>=1.0.0  # 通义千问 (可选)
+
+# ==================== 向量数据库 ====================
+# ChromaDB (推荐)
+chromadb>=0.4.0
+
+# FAISS (可选，高性能)
+# faiss-cpu>=1.7.0  # CPU版本
+# faiss-gpu>=1.7.0  # GPU版本 (需要CUDA)
+
+# ==================== 嵌入模型 ====================
+# Sentence Transformers
+sentence-transformers>=2.2.2
+
+# 中文分词
+jieba>=0.42.1
+
+# 数值计算
+numpy>=1.24.0
+
+# ==================== MCP支持 ====================
+# Model Context Protocol
+mcp>=1.9.1
+fastmcp>=2.4.0
+
+# ==================== 数据处理 ====================
+# JSON处理增强
+# ujson>=5.0.0  # 可选，更快的JSON处理
+
+# 数据分析 (可选)
+# pandas>=1.5.0
+# matplotlib>=3.7.0
+
+# ==================== 开发和测试 ====================
+# 日志增强 (可选)
+# colorlog>=6.0.0
+
+# 配置验证 (可选)
+# pydantic>=2.0.0
+
+# 进度条 (可选)
+# tqdm>=4.65.0
+
+# ==================== 安装说明 ====================
+# 
+# 基础安装 (最小依赖):
+#   pip install python-dotenv click requests sentence-transformers jieba chromadb
+#
+# 完整安装:
+#   pip install -r requirements_china.txt
+#
+# 可选组件:
+#   - 智谱AI: pip install zhipuai
+#   - 通义千问: pip install dashscope
+#   - FAISS: pip install faiss-cpu
+#   - 性能优化: pip install ujson colorlog
+#
+# 注意事项:
+#   - sentence-transformers 首次使用会下载模型文件
+#   - 中文模型 shibing624/text2vec-base-chinese 约200MB
+#   - ChromaDB 会在本地创建数据库文件
+#   - 某些依赖可能需要编译，建议使用conda环境 
